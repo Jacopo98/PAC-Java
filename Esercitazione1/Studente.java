@@ -1,10 +1,14 @@
+// ###########################################
+// @author Jacopo Boffelli - Matricola 1053217
+// ###########################################
+
 public class Studente implements Comparable<Object> {
 
 	//Attributi
-	String nome;
-	String cognome;
-	String data;
-	String universita;
+	private String nome;
+	private String cognome;
+	private String data;
+	private String universita;
 	
 	//Costruttore
 	public Studente(String nome, String cognome, String data, String universita) {
@@ -15,10 +19,10 @@ public class Studente implements Comparable<Object> {
 	}
 	
 	//Metodi accessori
-	String getName() { return nome; }
-	String getSurname() { return cognome; }
-	String getDate() { return data; }
-	String getUni() { return universita; }
+	public String getName() { return nome; }
+	public String getSurname() { return cognome; }
+	public String getDate() { return data; }
+	public String getUni() { return universita; }
 	
 	
 	public boolean equals(Studente studente) {
@@ -36,14 +40,4 @@ public class Studente implements Comparable<Object> {
 		if (this.nome.compareTo(o.getName())>0) return 1;
 		else return 0;
 	}
-
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	
-	
-	
 }
