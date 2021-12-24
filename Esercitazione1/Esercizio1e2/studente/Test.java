@@ -1,3 +1,5 @@
+package studente;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +21,7 @@ public class Test {
 		S_dup.add(new Studente("UniBG", "1", "A", "A"));
 		S_dup.add(new Studente("UniBG", "0", "A", "A"));
 		
-		VerificaDup test_verificaDup = new VerificaDuplicatoListIT();
+		verificaDuplicato test_verificaDup = new verificaDuplicato();
 		System.out.println(test_verificaDup.verificaDup(S_noDup)); // false
 		System.out.println(test_verificaDup.verificaDup(S_dup)); // true
 		

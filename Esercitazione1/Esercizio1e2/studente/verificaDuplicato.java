@@ -1,10 +1,13 @@
+package studente;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
 
-public class main {
+
+public class verificaDuplicato {
 
 	// LIST ITERATOR
-	public class VerificaDuplicatoListIT implements VerificaDup {
-		// implementazione verificaDup da interfaccia VerificaDup
+	// implementazione verificaDup da interfaccia VerificaDup
 		public boolean verificaDup(List S) {
 			ListIterator LI_est = S.listIterator(); // ListIterator esterno
 			while (LI_est.hasNext()) {
@@ -23,7 +26,7 @@ public class main {
 
 			return false;
 		}
-	}
+
 
 	// CICLO FOR
 	static boolean trovato = false;

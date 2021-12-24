@@ -2,6 +2,8 @@
 // @author Jacopo Boffelli - Matricola 1053217
 // ###########################################
 
+package studente;
+
 public class Studente implements Comparable<Object> {
 
 	//Attributi
@@ -29,9 +31,8 @@ public class Studente implements Comparable<Object> {
 		if (this.getName() == studente.getName()) {
 			return true;
 		}
-		else {
+		else
 		return false;
-		}
 	}
 	
 	
@@ -39,5 +40,11 @@ public class Studente implements Comparable<Object> {
 		if (this.nome.compareTo(o.getName())<0) return -1;
 		if (this.nome.compareTo(o.getName())>0) return 1;
 		else return 0;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
